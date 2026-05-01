@@ -3,48 +3,40 @@ export const products = [
     id: 1,
     name: "Headphone Bluetooth Premium",
     price: 599.90,
+    category: "Áudio",
+    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80",
     description: "Áudio de alta fidelidade com cancelamento de ruído ativo e até 30 horas de bateria.",
-    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80",
-    category: "Áudio"
+    fullDescription: "Desenvolvido para audiófilos, este headphone combina drivers de 40mm de neodímio com uma estrutura ergonômica. Possui carregamento rápido via USB-C e microfones integrados para chamadas cristalinas.",
+    specs: { weight: "250g", dimensions: "18 x 15 x 8 cm", connection: "Bluetooth 5.2" }
   },
   {
     id: 2,
     name: "Teclado Mecânico RGB",
     price: 349.50,
+    category: "Periféricos",
+    image: "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?w=800&q=80",
     description: "Switches lineares silenciosos, iluminação customizável e design ergonômico feito para durar.",
-    image: "https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&w=800&q=80",
-    category: "Periféricos"
+    fullDescription: "O teclado ideal para longas sessões de digitação ou jogos. Seus switches vermelhos garantem resposta rápida sem ruído excessivo. Chassi em alumínio aeronáutico para durabilidade extrema.",
+    specs: { weight: "1.1kg", dimensions: "44 x 13 x 4 cm", layout: "ABNT2" }
   },
   {
     id: 3,
     name: "Mouse Gamer Sem Fio",
     price: 289.90,
+    category: "Periféricos",
+    image: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=800&q=80",
     description: "Sensor óptico de precisão de 25K DPI, botões programáveis e bateria de longa duração para máxima performance.",
-    image: "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=800&q=80",
-    category: "Periféricos"
+    fullDescription: "Liberdade total de movimento com latência zero. Possui 6 botões programáveis via software e base de PTFE para deslize suave em qualquer superfície.",
+    specs: { weight: "85g", dimensions: "12 x 6 x 4 cm", dpi: "25.000" }
   },
   {
     id: 4,
     name: "Monitor UltraWide 34\"",
     price: 2499.00,
+    category: "Monitores",
+    image: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=800&q=80",
     description: "Resolução WQHD, taxa de atualização de 144Hz e painel IPS para cores vibrantes e imersão total.",
-    image: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=800&q=80",
-    category: "Monitores"
-  },
-  {
-    id: 5,
-    name: "Microfone Condensador USB",
-    price: 450.00,
-    description: "Captação de áudio profissional com padrão polar cardioide, ideal para podcasts, streaming e reuniões.",
-    image: "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=800&q=80",
-    category: "Áudio"
-  },
-  {
-    id: 6,
-    name: "Cadeira Ergonômica Pro",
-    price: 1299.00,
-    description: "Suporte lombar ajustável, material de malha respirável e design moderno para longas horas de trabalho ou jogo.",
-    image: "https://images.unsplash.com/photo-1505843490538-5133c6c7d0e1?auto=format&fit=crop&w=800&q=80",
-    category: "Móveis"
+    fullDescription: "Aumente sua produtividade e imersão. Este monitor oferece 33% mais espaço de tela que um monitor Full HD convencional. Certificação HDR400 para brilho e contraste superiores.",
+    specs: { weight: "6.5kg", dimensions: "82 x 36 x 22 cm", refreshRate: "144Hz" }
   }
 ];
