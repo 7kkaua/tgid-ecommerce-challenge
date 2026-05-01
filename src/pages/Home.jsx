@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { Search, Frown } from "lucide-react";
+import { Search } from "lucide-react";
 import { products } from "../services/products.js";
 import { ProductCard } from "../components/ProductCard";
+import { EmptyState } from "../components/EmptyState";
 
 export function Home() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -43,17 +44,10 @@ export function Home() {
           ))}
         </div>
       ) : (
-        <div className="flex flex-col items-center justify-center py-20 text-center">
-          <div className="bg-surface-100 dark:bg-surface-800 p-4 rounded-full mb-4">
-            <Frown size={40} className="text-surface-400" />
-          </div>
-          <h3 className="text-xl font-semibold text-surface-900 dark:text-white mb-2">
-            Nenhum produto encontrado
-          </h3>
-          <p className="text-surface-500 dark:text-surface-300 mb-6 max-w-md">
-            Não encontramos resultados para "{searchTerm}".
-          </p>
-        </div>
+        <EmptyState 
+          searchTerm={searchTerm} 
+          onClear={() => setSearchTerm("")} 
+        />
       )}
     </main>
   );
