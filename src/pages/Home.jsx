@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Search, Frown } from "lucide-react";
-import { products } from "../services/products";
+import { products } from "../services/products.js";
 import { ProductCard } from "../components/ProductCard";
 
 export function Home() {
